@@ -1,4 +1,4 @@
-## Problema de Acesso ao Language Studio:
+## Problema de acesso ao Language Studio:
 Infelizmente, o **Azure Language Studio** só está disponível para **contas corporativas ou de estudante**. Eu encontrei esse problema ao tentar acessar a interface visual do Language Studio, e como eu não tenho uma conta corporativa ou de estudante, não consegui utilizá-lo diretamente.
 
 No entanto, continuei utilizando o serviço de **Text Analytics API** do Azure através de **chamadas diretas à API** (como demonstrado neste projeto). Basta ter uma conta no **Azure**, criar o serviço **Text Analytics** e utilizar as **chaves da API**.
