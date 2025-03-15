@@ -18,6 +18,19 @@ Este projeto utiliza a API de **Análise de Sentimentos** do **Azure Cognitive S
 
 O código realiza uma análise de sentimentos usando a API do Azure, que retorna uma resposta com a classificação do sentimento do texto (positivo, neutro ou negativo) e os scores de confiança.
 
+### Explicação do Resultado:
+- **`sentiment: 'positive'`**: O sentimento geral do texto foi classificado como **positivo**.
+- **`confidenceScores`**: 
+  - **`positive: 0.98`**: 98% de confiança de que o sentimento é positivo.
+  - **`neutral: 0.02`**: 2% de chance de ser neutro.
+  - **`negative: 0.0`**: Não há nenhum sentimento negativo no texto.
+- **`sentences`**: A análise foi feita em cada frase individualmente. No caso, a frase "Eu realmente adoro usar o Azure, é incrível!" foi classificada como positiva.
+
+### Conclusão:
+Com este projeto, você consegue realizar **análise de sentimentos** em qualquer texto utilizando a **API do Azure**. Embora o **Language Studio** só esteja disponível para contas corporativas ou de estudante, ainda é possível utilizar a API diretamente com uma conta no **Azure**.
+
+Se tiver alguma dúvida ou precisar de mais ajuda, sinta-se à vontade para entrar em contato!
+
 ### Exemplo de resultado:
 ```json
 {
@@ -50,17 +63,3 @@ O código realiza uma análise de sentimentos usando a API do Azure, que retorna
   "modelVersion": "2025-01-01"
 }
 
-## Explicação do Resultado:
-- **`sentiment: 'positive'`**: O sentimento geral do texto foi classificado como **positivo**.
-- **`confidenceScores`**: 
-  - **`positive: 0.98`**: 98% de confiança de que o sentimento é positivo.
-  - **`neutral: 0.02`**: 2% de chance de ser neutro.
-  - **`negative: 0.0`**: Não há nenhum sentimento negativo no texto.
-- **`sentences`**: A análise foi feita em cada frase individualmente. No caso, a frase "Eu realmente adoro usar o Azure, é incrível!" foi classificada como positiva.
-
----
-
-## Conclusão:
-Com este projeto, você consegue realizar **análise de sentimentos** em qualquer texto utilizando a **API do Azure**. Embora o **Language Studio** só esteja disponível para contas corporativas ou de estudante, ainda é possível utilizar a API diretamente com uma conta no **Azure**.
-
-Se tiver alguma dúvida ou precisar de mais ajuda, sinta-se à vontade para entrar em contato!
